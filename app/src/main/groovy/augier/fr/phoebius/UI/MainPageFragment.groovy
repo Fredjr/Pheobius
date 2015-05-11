@@ -44,6 +44,8 @@ public class MainPageFragment extends Fragment implements TabListener
 		fragmentAdapter = new PagerAdaptater(fm)
 	}
 
+    public MainPageFragment (){}
+
 	@Override
 	View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
