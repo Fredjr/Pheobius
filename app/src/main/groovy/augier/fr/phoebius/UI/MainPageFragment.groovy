@@ -32,6 +32,7 @@ public class MainPageFragment extends Fragment implements TabListener
 {
 	@InjectView ViewPager mainPager
 	private PagerAdaptater fragmentAdapter
+    //private MusicService musicService
 
 	/**
 	 * Constructor
@@ -41,6 +42,7 @@ public class MainPageFragment extends Fragment implements TabListener
 	public MainPageFragment(FragmentManager fm)
 	{
 		super()
+        //musicService = ms
 		fragmentAdapter = new PagerAdaptater(fm)
 	}
 
