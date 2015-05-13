@@ -10,18 +10,20 @@
 	android:baselineAligned="false"
 	tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/mainFrame"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+	<fragment
+		android:id="@+id/mainFrame"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
 		android:foregroundGravity="top"
-		android:layout_weight="100">
-    </FrameLayout>
-
-	<FrameLayout
+		android:layout_weight="100"
+		android:name="augier.fr.phoebius.UI.MainPageFragment"
+		tools:layout="@layout/fragment_main_page">
+	</fragment>
+	<fragment
 		android:id="@+id/mediaController"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:layout_weight="1">
-	</FrameLayout>
+		android:name="augier.fr.phoebius.UI.PlayerControlFragment"
+		tools:layout="@layout/fragment_player_control">
+	</fragment>
 </LinearLayout>

@@ -22,17 +22,6 @@ public class MainActivity extends FragmentActivity
     }
 
 	@Override
-	protected void onStart()
-	{
-		super.onStart()
-
-		def frag = new MainPageFragment(supportFragmentManager)
-		def contr = new PlayerControlFragment()
-		supportFragmentManager.beginTransaction().add(R.id.mainFrame, frag).commit()
-		supportFragmentManager.beginTransaction().add(R.id.mediaController, contr).commit()
-	}
-
-	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
 		menuInflater.inflate(R.menu.main, menu)
